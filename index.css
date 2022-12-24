@@ -1,0 +1,475 @@
+/* ------ FONTE UTILIZADA ------- */
+@font-face{
+	font-family:'OmologoPersonal1010regular ';
+	src:url('Css/Fonte/OmologoPersonal1010regular.ttf');
+}
+
+/* ------ CONFIG GERAIS ------- */
+
+body, html{
+  overflow: hidden;
+}
+
+body {
+   display:block;
+  font-family:'OmologoPersonal1010regular';
+  font-size:12pt;
+}
+
+a{
+ text-decoration:none;
+ color:black;
+}
+
+
+/* -------- MENU --------- */
+
+.navbar {
+  background-image: linear-gradient(-90deg, #26511b, #305124);
+  width:100%;
+  height: 62px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.nav-link{
+  font-weight:bold;
+  margin-right:25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding-left: 14px;
+    width: 100%;
+    border-left: 3px solid transparent;
+}
+
+nav ul li.active a {
+    color: #FC5404;
+    background: #2a5c1e;
+    border-left-color: #FC5404;
+}
+
+a:hover {
+    color: #FC5404 !important;
+}
+
+li {
+	margin-left: 10px;
+}
+
+ul {
+	 background-image: linear-gradient(-90deg, #26511b, #305124);
+}
+
+.nav-item:last-child{
+	font-size:10pt;
+	text-align:left;
+}
+
+.navbar-nav .nav-link{
+	padding-left:10px;
+}
+
+/* -------- SCROLL CONTAINER --------- */
+
+#scroll-container{
+	scroll-behavior: smooth;
+	overflow: hidden;
+	position: fixed;
+	width:100%;
+	height:100%;
+	top:62px;
+}
+
+/* -------- SLIDERS -------- */
+
+header{
+	display:block;
+	margin: 0 auto;
+	overflow-y:scroll;
+	overflow-x:hidden;
+	width:100%;
+	height:100%;
+}
+
+#sliders{
+  height:88vh;
+}
+
+/* ------ TODAS AS SECTIONS ------- */
+
+#title-empresa, #title-servicos, #title-obras, #title-clientes, #title-contato{
+  margin-top:20px;
+  margin-bottom:30px;
+  font-size:28pt;
+}
+
+h1::after {
+	content: '';
+    display: block;
+	border-bottom: 5px solid black;
+    width: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+}
+
+#empresa, #servicos, #obras, #clientes, #contato{
+	background-image: linear-gradient(0deg, #edf6fb, #e9f1bd);
+	display:block;
+	overflow-y:scroll;
+	overflow-x:hidden;
+	color: black;
+	width:100%;
+	height:100%;
+	margin: 0 auto;
+}
+
+/* -------- EMPRESA -------- */
+
+#img-apresentacao{
+	margin-top:-2vh;
+	height:220px;
+	width:240px;
+}
+
+#content-empresa{
+  text-align:justify;
+}
+
+#empresa-card{
+	margin-top:10px;
+	margin-bottom:10px;
+	margin-left:20px;
+	width:30%;
+	border-color: #305124; 
+}
+
+#empresa-card-title{
+  border-bottom: 2px solid #305124; 
+}
+
+/* -------- SERVICOS -------- */
+	
+#icons-servicos{
+	height:80px;
+	width: 80px;
+	margin-top:10px !important;
+}
+
+.name-servico{
+	font-weight:bold;
+	text-align:center;
+	margin-top:15px !important;
+}
+
+#service-content{
+  text-align: center;
+  font-size: 13.5pt;
+  margin-top:10px;
+}
+
+#article-map, #article-service, #icons-servicos, .name-servico{
+	display:block;
+	margin: 0 auto;
+}
+
+/* -------- OBRAS REALIZADAS -------- */
+
+#saiba-mais-obras{
+	float:right;
+	margin-top:30px;
+	margin-bottom:10px;
+}
+
+#consultar-obras{
+	position:absolute;
+	margin-top:2%;
+	margin-left:15%;
+	background-image: linear-gradient(0deg, #edf6fb, #e9f1bd);
+	border-style: solid;
+	height:80%;
+	width:70%;
+	border-radius: 12px 12px;
+	overflow: hidden;
+	overflow-y: scroll !important;
+	text-overflow: ellipsis;
+	z-index:99999999;
+}
+
+#img-consulta-obra{
+	margin-left:10px;
+	margin-top:20px;
+	height:320px;
+	width: 50%;
+}
+
+#resumo-consulta-obra{
+	margin-top:20px;
+	text-align:justify;
+	font-size:13pt;
+}
+
+#close-button-obras{
+	display:block;
+	height:45px;
+	float:right;
+}
+
+/* -------- CLIENTES -------- */
+
+.card{
+	margin-bottom:15px;
+}
+
+/* -------- FORMULARIO -------- */
+
+.form-text, .form-control{
+	font-size: 13pt;
+}
+
+input{
+  margin-bottom:10px;
+}
+
+#btn-enviar{
+  margin-top:10px;
+  margin-bottom:20px;
+  background-image: linear-gradient(-180deg, #64701e, #7b8637);
+  width:30%;
+}
+
+/* -------- RODAPE -------- */
+
+footer {
+  text-align:center;
+  position:block;
+  width:100%;
+  height:auto;
+  background-image: linear-gradient(-90deg, #26511b, #305124);
+  color: white;
+}
+
+#content-footer{
+  text-align: center;
+  font-size: 13.5pt;
+}
+
+/* -------- BUTAO PARA O TOPO -------- */
+#to-top{
+	border: 1px solid black;
+	position:fixed;
+	z-index:999999;
+	width:60px;
+	height:60px;
+	margin-top:70vh;
+	margin-left:93vw;
+	background-image: url("Imgs/Icon/to-top.png");
+	background-repeat: no-repeat;
+	background-size: 35px 35px;
+	background-position:center;
+}
+
+/* --------------------------------------------------------------------- */
+/* -------- MEDIAS QUERIES -------- */
+
+@media (max-height: 449.99px) {
+	#to-top{
+		margin-top: 60vh !important;
+	}
+	#consultar-obras{
+		height:75%;
+	}
+	.navbar-collapse {
+		max-height: 250px;
+		overflow-y: auto;
+	}
+}
+@media (max-height: 449.99px) {
+	#to-top{
+		margin-top: 60vh !important;
+	}
+}
+
+@media (max-width: 575.98px) {
+	/* ------ DIV PARA DAR ESPAÇAMENTO NO FUNDO DE CADA SECTION ------- */
+	#div-bottom{
+		margin-bottom:15%;
+	}
+	/* ------ CARDS OBRA ------- */
+	#cards-obra{
+		display:block;
+		margin:0 auto;
+		width:80%;
+	}
+  /* ------ BUTAO PARA O TOPO ------- */
+	#to-top{
+		margin-top:70vh;
+		margin-left:80vw;
+	}
+	/* -------- EMPRESA -------- */
+	#img-apresentacao{
+		display: block;
+		margin: 0 auto;
+		margin-bottom:2vh !important;
+	}
+	#empresa-card{
+		width:90%;
+		display:block;
+		margin:0 auto;
+	}
+	#article-content-empresa{
+		width:82%;
+		margin-left:10vw;
+	}
+	/* -------- SERVICOS -------- */
+	#article-map{
+		margin-top:20px !important;
+	}
+	/* -------- OBRAS -------- */
+	#consultar-obras{
+	margin-left:2%;
+	width:95%;
+	}
+	#img-consulta-obra{
+	display:block;
+	margin:0 auto;
+	height:150px;
+	width: 75%;
+	}
+	#resumo-consulta-obra{
+	width:95%;
+	margin-left:10px;
+	text-align:justify;
+	font-size:13pt;
+	}
+	#close-button-obras{
+		height: 40px;
+		width: 40px;
+	}
+	/* -------- FORMULARIO -------- */
+	#btn-enviar{
+		width:100%;
+	}
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+	/* ------ DIV PARA DAR ESPAÇAMENTO NO FUNDO DE CADA SECTION ------- */
+	#div-bottom{
+		margin-bottom:8%;
+	}
+	/* ------ BUTAO PARA O TOPO ------- */
+	#to-top{
+		margin-top:70vh;
+		margin-left:84vw;
+	}
+	/* -------- EMPRESA -------- */
+	#img-apresentacao{
+		display: block;
+		margin: 0 auto;
+		margin-bottom:2vh !important;
+	}
+	#empresa-card{
+		width:46%;
+		display:block;
+		margin:0 auto;
+	}
+	/* -------- SERVICOS -------- */
+	#article-map{
+		margin-top:20px !important;
+	}
+	/* -------- OBRAS -------- */
+	#consultar-obras{
+	margin-left:3%;
+	width:90%;
+	}
+	#img-consulta-obra{
+	display:block;
+	margin:0 auto;
+	height:250px;
+	width: 50%;
+	}
+	#close-button-obras{
+		height: 45px;
+		margin-left:10%;	
+	}
+	/* -------- FORMULARIO -------- */
+	#btn-enviar{
+		width:100%;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+	/* ------ DIV PARA DAR ESPAÇAMENTO NO FUNDO DE CADA SECTION ------- */
+	#div-bottom{
+		margin-bottom:8%;
+	}
+	/* ------ BUTAO PARA O TOPO ------- */
+	#to-top{
+		margin-top:70vh;
+		margin-left:87vw;
+	}
+	/* -------- EMPRESA -------- */
+	#img-apresentacao{
+		margin-top:7vh;
+		height:240px;
+		width:240px;
+	}
+	/* -------- SERVICOS -------- */
+	#article-map{
+		margin-top:20px !important;
+	}
+	/* -------- OBRAS -------- */
+	#consultar-obras{
+		margin-left:5%;
+		width:90%;
+	}
+	#close-button-obras{
+		height: 45px;
+		width: 45px;
+		
+	}
+	/* -------- Formulario -------- */
+	.form-text, .form-control{
+		font-size: 11.5pt;
+	}
+}
+	
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	/* ------ DIV PARA DAR ESPAÇAMENTO NO FUNDO DE CADA SECTION ------- */
+	#div-bottom{
+		margin-bottom:7%;
+	}
+	/* ------ BUTAO PARA O TOPO ------- */
+	#to-top{
+		margin-top:70vh;
+		margin-left:90vw;
+	}
+	/* -------- EMPRESA -------- */
+	#img-apresentacao{
+		margin-top:3vh;
+	}
+	/* -------- SERVICO -------- */
+	#article-service{
+		margin-left:-3%;
+	}
+	/* -------- OBRAS -------- */
+	#consultar-obras{
+	margin-left:10%;
+	width:80%;
+	}
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  /* ------ DIV PARA DAR ESPAÇAMENTO NO FUNDO DE CADA SECTION ------- */
+  #div-bottom{
+	margin-bottom:5%;
+  }
+}
+
+@media (min-width: 1400px){
+  /* ------ BUTAO PARA O TOPO ------- */
+}

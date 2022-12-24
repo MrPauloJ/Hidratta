@@ -1,0 +1,310 @@
+/* ------ FONTE UTILIZADA ------- */
+@font-face{
+	font-family:'OmologoPersonal1010regular ';
+	src:url('Fonte/OmologoPersonal1010regular.ttf');
+}
+
+/* ------ CONFIG GERAIS ------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    box-sizing: border-box;
+	font-family:'OmologoPersonal1010regular';
+}
+
+/* ------ MENU ------- */
+
+.main_side{
+	margin-top:30px;
+}
+
+.sidebar {
+	z-index:999999;
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    background-image: linear-gradient(-90deg, #26511b, #305124);
+}
+
+nav ul {
+    height: 100%;
+    width: 100%;
+    list-style: none;
+    padding-left: 10px;
+}
+
+nav ul li {
+    line-height: 50px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+nav ul li:last-child {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+nav ul li a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding-left: 14px;
+    font-weight: 500;
+    display: block;
+    width: 100%;
+    border-left: 3px solid transparent;
+}
+
+nav li.active a {
+    background: #2a5c1e;
+    border-left-color: #FC5404;
+}
+
+nav ul li a:hover {
+    background: #2a5c1e;
+}
+
+a:hover {
+    color: #FC5404 !important;
+}
+
+/* ------ CONTEÚDO ------- */
+#content {
+	overflow-x: scroll;
+	position: fixed;
+	width:100%;
+	height:100%;
+    text-align: center;
+}
+
+/* ------ PRINCIAPL ------- */
+#principal{
+	position:absolute;
+	top:40%;
+	left:25%;
+}
+/* ------ ADM TABELAS ------- */
+#aux-adm{
+	position:absolute;
+	top:25%;
+	left:27%;	
+}
+
+#adm-slides, #adm-clientes{
+	position:absolute;
+	top:15%;
+	left:27%;
+}
+#adm-obras{
+	position:absolute;
+	top:8%;
+	left:27%;
+}
+
+#adm-dados-card{
+	margin-top:10px;
+}
+
+.card{
+	border-color: #305124; 
+	background-color:transparent;
+}
+
+.card-header{
+	background-color:transparent;
+}
+
+.btn{
+	background-color:#305124;
+	color:white;
+	font-weight:bold;
+}
+
+.btn:hover{
+    color: #FC5404 !important;
+}
+
+.btn.active {
+    color: #FC5404 !important;
+}
+
+#aux-adm-novos-slides, #aux-adm-novas-obras, #aux-adm-novos-clientes{
+	margin-top:-80px;
+}
+#aux-adm-up-slides, #aux-adm-up-obras, #aux-adm-up-clientes{
+	margin-top: -220px;
+}
+
+/* ------ CONFIG ------- */
+#config{
+	position:absolute;
+	top:25%;
+	left:27%;
+}
+
+/* ---------------------------------------- */
+/* ------ MEDIA QUERIES ------- */
+
+@media (max-height: 449.99px) {
+	.navbar-collapse {
+		max-height: 250px;
+		overflow-y: auto;
+	}
+}
+
+@media (max-width: 991.98px) {
+	/*MENU*/
+	.sidebar {
+		position: fixed;
+		width: 100%;
+		height: auto;
+		transition: left 0.4s ease
+	}
+}
+
+@media (max-width: 575.98px) {
+	/* BOTAO */
+	.btn{
+		display:block;
+		margin: 0 auto;
+		margin-bottom: 10px !important;
+		width:100%;
+	}
+	/*TELA DO CONTEUDO*/
+	#content{
+		height:90%;
+		top:57px;
+	}
+	/* ------ PRINCIAPL ------- */
+	#principal{
+		left:0%;
+	}
+	/* ------ CONFIG ------- */
+	#config{
+		top:20%;
+		left:10%;
+		width:80%;
+	}
+	/* ------ ADM TABELAS ------- */
+	#adm-slides, #adm-obras, #adm-clientes{
+		position:absolute;
+		top:10%;
+		left:10%;
+		width:80%;
+	}
+	/* ------ ADM TABELAS AUX ------- 
+	#aux-adm{
+		position:absolute;
+		top:25%;
+		left:10%;
+		width:80%;
+	}*/
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+	/* BOTAO */
+	.btn{
+		display:block;
+		margin: 0 auto;
+		margin-bottom: 10px !important;
+		width:45%;
+	}
+	/*TELA DO CONTEUDO*/
+	#content{
+		height:90%;
+		top:57px;
+	}
+	/* ------ PRINCIAPL ------- */
+	#principal{
+		left:0%;
+	}
+	/* ------ CONFIG ------- */
+	#config{
+		top:20%;
+		left:10%;
+		width:80%;
+	}
+	/* ------ ADM TABELAS ------- */
+	#adm-slides, #adm-obras, #adm-clientes{
+		position:absolute;
+		top:10%;
+		left:10%;
+		width:80%;
+	}
+	/* ------ ADM TABELAS AUX ------- 
+	#aux-adm{
+		position:absolute;
+		top:25%;
+		left:10%;
+		width:80%;
+	}*/
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+	/* BOTAO */
+	.btn{
+		display:block;
+		margin: 0 auto;
+		margin-left: 25px !important;
+		margin-bottom: 10px !important;
+		width:35%;
+	}
+	/*TELA DO CONTEUDO*/
+	#content{
+		height:90%;
+		top:57px;
+	}
+	/* ------ PRINCIAPL ------- */
+	#principal{
+		left:0%;
+	}
+	/* ------ CONFIG ------- */
+	#config{
+		top:20%;
+		left:10%;
+		width:80%;
+	}
+	/* ------ ADM TABELAS ------- */
+	#adm-slides, #adm-obras, #adm-clientes{
+		position:absolute;
+		top:10%;
+		left:10%;
+		width:80%;
+	}
+	/* ------ ADM TABELAS AUX ------- 
+	#aux-adm{
+		position:absolute;
+		top:25%;
+		left:10%;
+		width:80%;
+	}*/
+}
+	
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	/* ------ ADM TABELAS ------- */
+	#adm-slides, #adm-obras, #adm-clientes{
+		width:70%;
+	}
+	/* BOTAO */
+	.btn{
+		display:block;
+		margin:0 auto;
+		margin-bottom: 10px !important;
+		width:30%;
+	}
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+	/* BOTAO */
+	.btn{
+		width:25%;
+		display:block;
+		margin:0 auto;
+		margin-bottom: 10px !important;
+	}
+}
+
+@media (min-width: 1400px){
+}
+

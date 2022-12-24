@@ -1,0 +1,45 @@
+{
+    "Users":[
+        {
+            "id":0,
+            "user":"admin",
+            "senha":"troll123"
+        }
+    ],
+    "Slides":[
+        {
+            "id":0,
+            "imagem":"k"
+        },
+        {
+            "id":1,
+            "imagem":"123"
+        }
+    ],
+    "Clientes":[
+        {
+            "id":0,
+            "nome":"Almir",
+            "imagem":"k"
+        },
+        {
+            "id":1,
+            "nome":"miro",
+            "imagem":"123"
+        }
+    ],
+    "Post":[
+        {
+            "id":0,
+            "titulo":"x",
+            "conteudo":"bla bla",
+            "imagem":"base64"
+        },
+        {
+            "id":1,
+            "titulo":"2x",
+            "conteudo":"bla 2",
+            "imagem":"base62 22"
+        }
+    ]
+}
